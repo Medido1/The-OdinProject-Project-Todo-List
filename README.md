@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution](https://github.com/Medido1/The-OdinProject-Project-Todo-List)
-- Live Site URL: [live site]()
+- Live Site URL: [live site](https://medido1.github.io/The-OdinProject-Project-Todo-List/)
 
 ## My process
 
