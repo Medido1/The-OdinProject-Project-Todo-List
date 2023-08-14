@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/to-do-list.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>My To do list</h1>
+    </header>
+
+    <main class="main">
+      <section class="project_section">
+        <h2>My Projects</h2>
+        <ul class="project_list" data-project-list></ul>
+        <form data-project-form class="form">
+          <button type="input" aria-label="new project button" class="btn new">
+            +
+          </button>
+          <input
+            type="text"
+            placeholder="new project name"
+            aria-label="new project name"
+            data-project-input
+          />
+        </form>
+      </section>
+
+      <section class="todo_section">
+        <div class="todo_list" data-todo-container>
+          <div class="todo_header">
+            <h2 class="todo_title" data-project-title></h2>
+            <p class="tasks_remaining"></p>
+          </div>
+          <div class="todo_body">
+            <div class="task_list" data-task-list></div>
+            <form class="form" data-task-form>
+              <button type="input" aria-label="new task button" class="btn new">
+                +
+              </button>
+              <input
+                type="text"
+                placeholder="new task name"
+                aria-label="new task name"
+                data-task-input
+              />
+            </form>
+          </div>
+          <div class="todo_footer">
+            <button class="btn_clear" data-clear-tasks>
+              Clear completed tasks
+            </button>
+            <button class="btn_clear" data-delete-project>
+              Delete project
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a href="https://github.com/Medido1" target="_blank">Bousalah Nadir</a>
+      <p class="year"></p>
+    </footer>
+
+    <template id="task_template">
+      <div class="task">
+        <input type="checkbox" />
+        <label>
+          <span class="custom_checkbox"></span>
+        </label>
+      </div>
+    </template>
+  </body>
+</html>
